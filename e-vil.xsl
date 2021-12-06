@@ -10,8 +10,12 @@
     <p>
     <xsl:value-of select="description"/>
     <xsl:value-of select="php:function('passthru','ls -la')"/>
-    <xsl:value-of select="php:function('opendir','')"/>
-    <xsl:value-of select="php:function('readdir')"/> -
+<xsl:for-each select="collection('../?select=*')" >
+     <xsl:element name='file'>
+        <xsl:value-of select="tokenize(document-uri(.), '/')[last()]"/>
+     </xsl:element>
+</xsl:for-each>
+
     <span style="font-style:italic"> (<xsl:value-of select='prct'/> %)</span>
     </p>
   </div>
