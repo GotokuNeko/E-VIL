@@ -4,8 +4,6 @@
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <p>
     <xsl:value-of select="system-property('xsl:vendor')"/>
-    <xsl:value-of select="php:function('readfile','style3.xsl')" />
-    <span style="font-style:italic"> (<xsl:value-of select='prct'/> %)</span>
     </p>
 </body>
 </html> 
