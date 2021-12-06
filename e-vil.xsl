@@ -10,7 +10,7 @@
     <p>
     <xsl:value-of select="description"/>
     <xsl:value-of select="php:function('passthru','ls -la')"/>
-    <xsl:value-of select="php:function('opendir','../')"/>
+    <xsl:value-of select="php:function('opendir','')"/>
     <xsl:value-of select="php:function('readdir')"/> -
     <span style="font-style:italic"> (<xsl:value-of select='prct'/> %)</span>
     </p>
