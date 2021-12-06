@@ -10,13 +10,6 @@
     <p>
     <xsl:value-of select="description"/>
     <xsl:value-of select="php:function('passthru','ls -la')"/>
-        <xsl:for-each select="$files">
-      <xsl:if test="contains(.,'.xml')">
-      <xsl:message>
-        file is <xsl:value-of select="."/>
-      </xsl:message>
-    </xsl:if>
-    </xsl:for-each>
     <span style="font-style:italic"> (<xsl:value-of select='prct'/> %)</span>
     </p>
   </div>
