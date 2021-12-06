@@ -18,8 +18,8 @@ timestamp='<1755.1.5f403625.BcWGgpKzUPRC8vscWn0wuA==@vps-7e2f5a72>'
 # Using readlines()
 file1 = open(dico,'r',errors='ignore')
 Lines = file1.readlines()
-password =""
 count = 0
+
 # Strips the newline character
 for line in Lines:
     count += 1
@@ -34,7 +34,6 @@ for line in Lines:
     
     if(target in md5):
         print("\n\nPASSWORD FOUND !!! : ",line.strip())
-        password = password+"\n"+line
         time.sleep(5)
         file1.close()
         exit()
@@ -43,7 +42,6 @@ for line in Lines:
     md5=hashlib.md5(word.encode('utf-8')).hexdigest()
     if(target in md5):
         print("\n\nPASSWORD FOUND !!! : ",line.strip().lower())
-        password = password+"\n"+line
         time.sleep(5)
         file1.close()
         exit()
