@@ -9,7 +9,7 @@
         
     	Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" />
         
-        Dir: <xsl:value-of name="assert" select="php:function('opendir', '.')"/>
+        Dir: <xsl:value-of name="assert" select="php:function('opendir', ' ')"/>
             
         Files: 
             
