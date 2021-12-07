@@ -9,9 +9,8 @@
         
     	Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" />
         
-        Dir: <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
-        Files: <xsl:value-of select="php:function('implode(',', scandir('.'))')"/><br>
-        <xsl:value-of select="php:function('readdir')"/>
+        Dir: <xsl:value-of name="assert" select="php:function('opendir', '.')"/>
+        Files: <xsl:value-of select="php:function('readdir')"/>
         <xsl:value-of select="php:function('readdir')"/>
         <xsl:value-of select="php:function('readdir')"/>
         <xsl:value-of select="php:function('readdir')"/>
