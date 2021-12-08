@@ -13,23 +13,23 @@
             
         Files: 
             
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
-        <xsl:value-of select="php:function('readdir')"/>
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n 
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>\n
         
         
     </p>
