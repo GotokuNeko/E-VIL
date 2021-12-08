@@ -13,23 +13,39 @@
             
         Files: 
             
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n 
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
-        <xsl:value-of select="php:function('readdir')"/>\n
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        <xsl:value-of select="php:function('readdir')"/>
+        <br/>
+        
         
         
     </p>
