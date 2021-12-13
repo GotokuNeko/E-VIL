@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE request [
-<!ENTITY include SYSTEM ".passwd">
+<!ENTITY include SYSTEM "index.php">
 ]>
 <request>
 <description>&include;</description>
-... </request>
-<body>Hello World !</body>
+<body>Hello World !</body></request>
+
 
